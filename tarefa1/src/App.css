@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: whitesmoke;
+}
+
+button {
+  min-width: 15vw;
+  border: none;
+  background-color: #2a7b68;
+  padding: 3vh 2vw;
+  border-radius: 10px;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  margin-bottom: 3rem;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+button:active {
+  transform: scale(90%);
+  transition-duration: 0.3s
+}
+
+@media (max-width: 900px) {
+  button {
+    width: 20vw;
+    min-width: 110px;
+  }
+}
