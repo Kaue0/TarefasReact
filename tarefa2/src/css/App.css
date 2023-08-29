@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 90%;
+}
+
+.main > h1 {
+  align-self: center;
+  font-weight: normal;
+}
+
+.main > h4 {
+  font-size: 3vh;
+  font-weight: normal;
+}
+
+.main > label {
+  margin: 1.5vh 0;
+}
+
+.main > input {
+  width: 50%;
+  height: 3vh;
+  border: none;
+  border-radius: 15px;
+  padding: 1vh 1vw;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.main > table {
+  width: 100%;
+  margin: 2vh 0;
+}
+
+.main > table > thead > tr > th {
+  font-size: 2rem;
+  padding: 1.5vh 0.5vw;
+  background-color: #1a1b20;
+}
+
+.main > table > tbody > tr > td {
+    color: white;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    text-transform: capitalize;
+    background-color: #1a1b20;
+}
+
+.main > table > tbody > tr > td > img {
+  aspect-ratio: 16/9;
+}
