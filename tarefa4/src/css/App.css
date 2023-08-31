@@ -1,0 +1,205 @@
+.color1 {color: #1d8976;}
+.color2 {color: #5a9f67;}
+.color3 {color: #a8b176;}
+.color4 {color: #e2cca3;}
+.color5 {color: #e8d8c8;}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap');
+
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+main > h1 {
+  background-color: rgb(90, 159, 103);
+  padding: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 0.4s ease;
+  border: 1vw solid rgb(90 159 92 / 57%);
+  margin-bottom: 7vh;
+}
+
+main > h1:hover {
+  transform: scale(0.97);
+}
+
+form {
+  width: 60%;
+  display: flex;
+  padding: 3vh;
+  align-items: center;
+}
+
+form > input {
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  font-size: 1rem;
+  margin: 2vh 2vw;
+  font-weight: bold;
+  background-color: rgb(16 33 39);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d8976;
+  text-transform: capitalize;
+  flex: 1;
+  height: 3vh;
+}
+
+form > button {
+  background-color: #5a9f67;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 2vh 0vw;
+  width: 5vw;
+  font-size: 2rem;
+  display: flex;
+  padding: 0.7rem;
+  cursor: pointer;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+form > button:hover {
+  transform: scale(94%);
+}
+
+
+.todolist {
+  width: 60%;
+  background-color: #1b3d42;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow-y:scroll;
+}
+
+.todolist > ul {
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0vw;
+}
+
+
+.todolist > p {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #282c34;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #209f8b;
+}
+
+li {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin-bottom: 3vh;
+  border-bottom: 3px solid #282c34;
+  border-right: 3px solid #282c34;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+li:hover {
+  box-shadow: rgb(143 243 243 / 40%) 0px 4px 21px -4px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li > input {
+  width: 2vw;
+  height: 2vh; 
+  cursor: pointer;
+}
+
+li > .task-text {
+  width: 95%;
+  font-size: 1.8rem;
+  color: #00ffd7;
+  text-align: center;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+li > button {
+  display: flex;
+  background-color: rgb(90, 159, 103);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: .6rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.achieved-item {
+  background-color: #00000069;
+}
+
+.achieved-item > p:after {
+  content: "✔️";
+  text-decoration: none
+}
+
+.message {
+  align-self: center;
+  background-color: #1b3d42;
+  color: whitesmoke;
+  padding: 1rem;
+  border: solid 2px black;
+  border-radius: 50px;
+  position: absolute;
+  top: 140px;
+  z-index: 100;
+  margin: 2vh 2vw;
+  transition: 0.4s ease;
+}
+
+.message:hover {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 900px) {
+  .todolist {
+      width: 80%;
+  }
+
+  form > button {
+    width: 15%;
+  }
+  
+}
